@@ -25,10 +25,10 @@ body {
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(41, 127, 185, 0.5),
-      rgba(20, 30, 48, 0.5)
+      rgba(9, 24, 33, 0.8),
+      rgba(11, 21, 40, 0.8)
     ),
-    url(../img/coding_4.jpeg);
+    url(../img/coding_2.jpeg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
@@ -51,11 +51,13 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .hero-title {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 6rem;
 }
 
 .hero-title-main {
@@ -70,4 +72,29 @@ body {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.9rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 5rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
