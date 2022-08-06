@@ -1,7 +1,15 @@
-/* 
-Azul claro #2980b9
-Azul medio #2c3e50
-Azul oscuro #141E30 */
+:root {
+  --blue-light: #2c5364;
+  --blue-middle: #203a43;
+  --blue-dark: #1168B2;
+  --orange-light: #Fc997c;
+  --orange-dark: #F18533; 
+  --green-light:#71b280;
+  --green-dark:#6BB03D;
+  --grey-light: #777777;
+  --white: #ffffff;
+  --shadow:rgba(0, 0, 0, 0.15); 
+}
 
 * {
   margin: 0;
@@ -18,7 +26,7 @@ body {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
+  color: var(--grey-light);
 }
 
 .hero {
@@ -31,6 +39,7 @@ body {
     url(../img/coding_2.jpeg);
   background-size: cover;
   background-position: top;
+  --webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 
   position: relative;
@@ -48,14 +57,14 @@ body {
 
 .text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .hero-title {
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   margin-bottom: 6rem;
 }
@@ -77,7 +86,7 @@ body {
 .button:link,
 .button:visited {
   text-transform: uppercase;
-  color: #777;
+  color: var(--grey-light);
   text-decoration: none;
   padding: 1rem 5rem;
   display: inline-block;
@@ -97,8 +106,8 @@ body {
 }
 
 .button-white {
-  background-color: #fff;
-  color: #777;
+  background-color: var(--white);
+  color: var(--grey-light);
 }
 
 .button::after {
@@ -115,7 +124,7 @@ body {
 }
 
 .button-white::after {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .button:hover::after {
@@ -126,11 +135,13 @@ body {
   margin: 5rem 0;
 }
 
+/*Card rotation effect*/
 .my-card {
   perspective: 150rem;
   --moz-perspective: 150rem;
   position: relative;
   height: 40rem; /* Must be the same */
+  margin: 0 1rem;
 }
 
 .my-card:hover .my-card__side {
@@ -138,27 +149,103 @@ body {
 }
 
 .my-card__side {
-  background-color: #ffffff;
+  background-color: var(--white);
   height: 40rem; /* Must be the same */
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem var(--shadow);
 }
 
 .my-card__side--front {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .my-card__side--back {
   transform: rotateY(180deg);
-  background-image: linear-gradient(to right bottom, #2c3e50, #141e30);
+  color: var(--white);
+  text-align: center;
+  position: relative;
+}
+
+.my-card__side--back-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-style: italic;
+
+}
+
+.my-card__side--back-1{
+  background-color: var(--orange-dark);
+}
+
+.my-card__side--back-2{
+  background-color: var(--blue-dark);
+}
+
+.my-card__side--back-3{
+  background-color: var(--green-dark);
 }
 
 .my-card:hover .my-card__side--back {
   transform: rotateY(0);
 }
+
+.my-card:hover .my-card__side--front {
+  transform: rotateY(-180deg);
+}
+
+/*Front card styling*/
+.my-card__img {
+  background-size: cover; 
+  height: 18rem;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.my-card__img--1 {
+  background-image: linear-gradient(to right bottom, var(--orange-light), var(--orange-dark)), url(../img/coding_1.jpeg);
+  color: var(--white);
+  text-align: center;
+}
+
+.my-card__img--2 {
+  background-image: linear-gradient(to right bottom, var(--blue-light), var(--blue-dark)), url(../img/coding_1.jpeg);
+  color: var(--white);
+  text-align: center;
+}
+
+.my-card__img--3 {
+  background-image: linear-gradient(to right bottom, var(--green-light), var(--green-dark)), url(../img/coding_1.jpeg);
+  color: var(--white);
+  text-align: center;
+}
+
+.my-card__text {
+  margin: 2rem;
+  text-align: center;
+}
+
+.technologies {
+  height: 80vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(9, 24, 33, 0.8),
+      rgba(11, 21, 40, 0.8)
+    ),
+    url(../img/coding_3.jpeg);
+  background-size: cover;
+  background-position: top;
+  --webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+
+}
+
+
