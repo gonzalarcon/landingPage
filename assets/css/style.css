@@ -29,6 +29,11 @@ body {
   color: var(--grey-light);
 }
 
+.separador {
+  margin: 5rem 0;
+}
+
+/*hero section*/
 .hero {
   height: 100vh;
   background-image: linear-gradient(
@@ -131,10 +136,10 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.separador {
-  margin: 5rem 0;
-}
 
+/*end hero section*/
+
+/*Services section*/
 /*Card rotation effect*/
 .my-card {
   perspective: 150rem;
@@ -232,8 +237,12 @@ body {
   margin: 2rem;
   text-align: center;
 }
+/*End Services*/
 
-.technologies {
+
+/*Features Section*/
+
+.features {
   height: 80vh;
   background-image: linear-gradient(
       to right bottom,
@@ -247,5 +256,8 @@ body {
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 
 }
+
+
+/*End Features*/
 
 
