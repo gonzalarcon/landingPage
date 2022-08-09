@@ -265,8 +265,8 @@ body {
     url(../img/coding_3.jpeg);
   background-size: cover;
   background-position: top;
-  --webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  --webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
 }
 
 .feature-card {
