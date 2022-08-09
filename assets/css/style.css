@@ -1,14 +1,14 @@
 :root {
   --blue-light: #2c5364;
   --blue-middle: #203a43;
-  --blue-dark: #1168B2;
-  --orange-light: #Fc997c;
-  --orange-dark: #F18533; 
-  --green-light:#71b280;
-  --green-dark:#6BB03D;
+  --blue-dark: #1168b2;
+  --orange-light: #fc997c;
+  --orange-dark: #f18533;
+  --green-light: #71b280;
+  --green-dark: #6bb03d;
   --grey-light: #777777;
   --white: #ffffff;
-  --shadow:rgba(0, 0, 0, 0.15); 
+  --shadow: rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -182,20 +182,19 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   font-style: italic;
-
 }
 
-.my-card__side--back-1{
+.my-card__side--back-1 {
   background-color: var(--orange-dark);
 }
 
-.my-card__side--back-2{
+.my-card__side--back-2 {
   background-color: var(--blue-dark);
 }
 
-.my-card__side--back-3{
+.my-card__side--back-3 {
   background-color: var(--green-dark);
 }
 
@@ -209,26 +208,41 @@ body {
 
 /*Front card styling*/
 .my-card__img {
-  background-size: cover; 
+  background-size: cover;
   height: 18rem;
   background-blend-mode: screen;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .my-card__img--1 {
-  background-image: linear-gradient(to right bottom, var(--orange-light), var(--orange-dark)), url(../img/coding_1.jpeg);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--orange-light),
+      var(--orange-dark)
+    ),
+    url(../img/coding_1.jpeg);
   color: var(--white);
   text-align: center;
 }
 
 .my-card__img--2 {
-  background-image: linear-gradient(to right bottom, var(--blue-light), var(--blue-dark)), url(../img/coding_1.jpeg);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--blue-light),
+      var(--blue-dark)
+    ),
+    url(../img/coding_1.jpeg);
   color: var(--white);
   text-align: center;
 }
 
 .my-card__img--3 {
-  background-image: linear-gradient(to right bottom, var(--green-light), var(--green-dark)), url(../img/coding_1.jpeg);
+  background-image: linear-gradient(
+      to right bottom,
+      var(--green-light),
+      var(--green-dark)
+    ),
+    url(../img/coding_1.jpeg);
   color: var(--white);
   text-align: center;
 }
@@ -239,11 +253,10 @@ body {
 }
 /*End Services*/
 
-
 /*Features Section*/
 
 .features {
-  height: 80vh;
+  padding: 20rem;
   background-image: linear-gradient(
       to right bottom,
       rgba(9, 24, 33, 0.8),
@@ -254,10 +267,33 @@ body {
   background-position: top;
   --webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-
 }
 
+.feature-card {
+  min-height: 22rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1, 5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.feature-card__icon {
+  margin-bottom: 3rem;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--blue-dark),
+    var(--blue-light)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 /*End Features*/
-
-
