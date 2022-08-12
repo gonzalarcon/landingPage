@@ -1,0 +1,22 @@
+.portfolio {
+  padding: 20rem;
+  text-align: center;
+
+  &-title {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &-img {
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+    & img {
+      width: 100%;
+    }
+  }
+}
