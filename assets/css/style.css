@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -20,12 +20,24 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(9, 24, 33, 0.8)), to(rgba(11, 21, 40, 0.8))), url(../img/coding_2.jpeg);
-  background-image: linear-gradient(to right bottom, rgba(9, 24, 33, 0.8), rgba(11, 21, 40, 0.8)), url(../img/coding_2.jpeg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(9, 24, 33, 0.8)),
+      to(rgba(11, 21, 40, 0.8))
+    ),
+    url(../img/coding_2.jpeg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(9, 24, 33, 0.8),
+      rgba(11, 21, 40, 0.8)
+    ),
+    url(../img/coding_2.jpeg);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   position: relative;
 }
 .hero-title {
@@ -53,7 +65,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -63,13 +75,25 @@ body {
 
 .features {
   padding: 20rem 15rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(9, 24, 33, 0.8)), to(rgba(11, 21, 40, 0.8))), url(../img/coding_3.jpeg);
-  background-image: linear-gradient(to right bottom, rgba(9, 24, 33, 0.8), rgba(11, 21, 40, 0.8)), url(../img/coding_3.jpeg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(9, 24, 33, 0.8)),
+      to(rgba(11, 21, 40, 0.8))
+    ),
+    url(../img/coding_3.jpeg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(9, 24, 33, 0.8),
+      rgba(11, 21, 40, 0.8)
+    ),
+    url(../img/coding_3.jpeg);
   background-size: cover;
   background-position: top;
   --webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   -webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-          clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
 .portfolio {
@@ -88,7 +112,7 @@ body {
 }
 .portfolio-img:hover {
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 .portfolio-img img {
   width: 100%;
@@ -100,7 +124,7 @@ body {
   padding: 5rem 30rem;
   background-color: #e25263;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 .tech-icon {
   margin: 2rem 0;
@@ -128,7 +152,7 @@ body {
 .footer-form__input:focus {
   outline: none;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #e25263;
 }
 .footer-form__input::-webkit-input-placeholder {
@@ -157,7 +181,7 @@ body {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
-          transform: translateY(-4rem);
+  transform: translateY(-4rem);
 }
 .footer-info {
   padding: 0 5rem;
@@ -170,7 +194,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.btn, .btn:link {
+.btn,
+.btn:link {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -183,27 +208,13 @@ body {
   cursor: pointer;
 }
 
-.btn-white {
-  background-color: #ffffff;
-  color: #777777;
-}
-
-.btn-white::after {
-  background-color: #ffffff;
-}
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
 .card {
-  border: none!important;
+  border: none;
 }
 
 .card-lg {
   -webkit-perspective: 150rem;
-          perspective: 150rem;
+  perspective: 150rem;
   --moz-perspective: 150rem;
   position: relative;
   height: 40rem; /* Must be the same */
@@ -212,16 +223,16 @@ body {
 }
 .card-lg:hover .card-lg__side {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .card-lg__side {
   background-color: #ffffff;
   height: 40rem; /* Must be the same */
   /* transition: all 0.8s ease; */
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -231,18 +242,18 @@ body {
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card-lg__side--front {
   background-color: #ffffff;
 }
 .card-lg__side--back {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -252,7 +263,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-style: italic;
 }
 .card-lg__side--back-1 {
@@ -266,11 +277,11 @@ body {
 }
 .card-lg:hover .card-lg__side--back {
   -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  transform: rotateY(0);
 }
 .card-lg:hover .card-lg__side--front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 .card-lg__img {
   background-size: cover;
@@ -280,11 +291,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .card-lg__img--1 {
   background-color: #e25263;
@@ -314,14 +325,14 @@ body {
   text-align: center;
   border-radius: 10px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: #ffffff;
 }
 .card-sm:hover {
   -webkit-transform: translateY(-1.1rem) scale(1.01);
-          transform: translateY(-1.1rem) scale(1.01);
+  transform: translateY(-1.1rem) scale(1.01);
 }
 .card-sm__icon {
   margin-bottom: 3rem;
