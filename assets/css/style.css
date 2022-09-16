@@ -45,11 +45,6 @@ body {
   font-weight: 400;
   letter-spacing: 0.9rem;
 }
-.hero-logo {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
 .hero-logo__img {
   height: 35px;
 }
@@ -175,57 +170,35 @@ body {
   margin-bottom: 1rem;
 }
 
-.button, .button:link, .button:visited {
+.btn, .btn:link {
   text-transform: uppercase;
-  color: #777777;
+  color: #fff;
   text-decoration: none;
   padding: 1rem 5rem;
-  display: inline-block;
-  border-radius: 100px;
-  -webkit-transition: all 0.2s;
+
   transition: all 0.2s;
   position: relative;
-  /* This is for <button> */
+
   border: none;
   cursor: pointer;
 }
-.button:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-box-shadow: 0 10px 20px rgb(0, 0, 0);
-          box-shadow: 0 10px 20px rgb(0, 0, 0);
-}
-.button:active, .button:focus {
-  outline: none;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  -webkit-box-shadow: 0 5px 10px rgb(0, 0, 0);
-          box-shadow: 0 5px 10px rgb(0, 0, 0);
-}
-.button-white {
+
+.btn-white {
   background-color: #ffffff;
   color: #777777;
 }
-.button::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.button-white::after {
+
+.btn-white::after {
   background-color: #ffffff;
 }
-.button:hover::after {
+.btn:hover::after {
   -webkit-transform: scaleX(1.4) scaleY(1.6);
           transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+.card {
+  border: none!important;
 }
 
 .card-lg {

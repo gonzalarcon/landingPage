@@ -19,15 +19,46 @@
 
 <body>
   <header class="hero" id="particles-js">
-    <div class="hero-logo">
-      <img src="/assets/img/coding-white.png" alt="logo" class="hero-logo__img">
-    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/img/coding-white.png" alt="logo" class="hero-logo__img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
     <div class="hero-text-box">
       <h1 class="hero-title">
         <span class="hero-title-main">Full Stack Developer</span>
         <span class="hero-title-sub">Diseño y desarrollo de soluciones digitales</span>
       </h1>
-      <a href="#" class="button button-white">Ver más</a>
+      <a href="#" class="btn btn-secondary">Ver más</a>
     </div>
   </header>
   <div class="container">
@@ -36,7 +67,7 @@
       <div class="row">
         <!--Card 1-->
         <div class="col-12 col-md-4 my-5">
-          <div class="card-lg">
+          <div class=" card card-lg">
             <div class="card-lg__side card-lg__side--front">
               <div class="card-lg__img card-lg__img--1">
                 <i class="fa-solid fa-laptop-code fa-5x card-lg__icon"></i>
@@ -56,7 +87,7 @@
         <!--End Card 1-->
         <!--Card 2-->
         <div class="col-12 col-md-4 my-5">
-          <div class="card-lg">
+          <div class="card card-lg">
             <div class="card-lg__side card-lg__side--front">
               <div class="card-lg__img card-lg__img--2">
                 <i class="fa-solid fa-window-restore fa-5x card-lg__icon"></i>
@@ -77,7 +108,7 @@
         <!--End Card 2-->
         <!--Card 3-->
         <div class="col-12 col-md-4 my-5">
-          <div class="card-lg">
+          <div class="card card-lg">
             <div class="card-lg__side card-lg__side--front">
               <div class="card-lg__img card-lg__img--3">
                 <i class="fa-solid fa-cart-plus fa-5x card-lg__icon"></i>
@@ -219,10 +250,9 @@
       </div>
     </div>
   </footer>
-
   <!-- End Footer -->
-
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="assets/js/particles.js"></script>
 </body>
